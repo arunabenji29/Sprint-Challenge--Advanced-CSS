@@ -1,20 +1,18 @@
 // Navigation code here
 
 .nav-container{
-    // border:2px solid red;
     width:100%;
     margin:0 18.4%;
     border:@nav-border;
     font-style: @nav-font;
     background-color: @nav-bg;
-    // display:flex;
-    // flex-direction: column;
-    // justify-content:space-evenly;
     .custom_layout_1();
-    // margin-top:20px;
     height:100px;
     padding:0 15%;
-    
+    position:fixed;
+    opacity:.5;
+    // background:white;
+
     @media @phone{
 
         margin:0;
@@ -22,36 +20,17 @@
     
 
     h1{
-        // border:2px solid green;
-        // width:100%
-        // width:40%;
-        // margin-right: 11%;
-        
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         .custom_layout();
         font-size:37px;
 
     }
 
     nav{
-        // border:2px solid blue;
-        // width:100%;
-        // width:400px;
-        // height:200px;
         display:flex;
         justify-content: space-between;
 
         a{
-            // border:2px solid darkorange;
             text-decoration:none;
-            // width: 100px;
-            // height: 100px;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            
             .custom_layout();
             font-size: 16px;
             color:black;
