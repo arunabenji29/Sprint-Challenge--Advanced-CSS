@@ -1,1 +1,38 @@
 // Mixins Here
+.custom_layout(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom_layout_1(){
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+  }
+  
+  //parametric Mixins
+  .btn_layout(@justify,@align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
+  .custom_btn(@width,@height) {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .btn_layout(center,center);
+    height: @height;
+    width:@width;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: @btnfont-size;
+    color: @btn-color;
+    background-color:@btn-background-color;
+  
+    &:hover{
+      color: @btn-background-color;
+      background-color:@btn-color;
+    }
+  }
