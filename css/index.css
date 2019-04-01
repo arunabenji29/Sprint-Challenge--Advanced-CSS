@@ -167,8 +167,8 @@ p {
   }
 }
 .nav-container {
-  width: 100%;
-  margin: 0 18.4%;
+  width: 63%;
+  margin: 0 18.5%;
   border: #F1F1F1;
   font-style: #454A59;
   background-color: #F6F6F6;
@@ -178,11 +178,14 @@ p {
   height: 100px;
   padding: 0 15%;
   position: fixed;
-  opacity: 0.5;
+  opacity: 0.9;
+  z-index: 2;
 }
 @media (max-width:500px) {
   .nav-container {
-    margin: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 10%;
   }
 }
 .nav-container h1 {
@@ -212,6 +215,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  position: relative;
+  top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -276,40 +283,6 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 100px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 18px;
-  color: white;
-  background-color: black;
-}
-.home .walk .walk-text .btn:hover {
-  color: black;
-  background-color: white;
-}
-@media (max-width:500px) {
-  .home .walk .walk-text .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 18px;
-    color: white;
-    background-color: black;
-  }
-  .home .walk .walk-text .btn:hover {
-    color: black;
-    background-color: white;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -330,6 +303,40 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-img img {
     width: 100%;
+  }
+}
+.home .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+}
+.home .btn:hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width:500px) {
+  .home .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+  }
+  .home .btn:hover {
+    color: black;
+    background-color: white;
   }
 }
 @media (max-width:500px) {
